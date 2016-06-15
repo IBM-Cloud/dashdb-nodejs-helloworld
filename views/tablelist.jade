@@ -1,0 +1,19 @@
+extends layout
+
+block content
+    h1=message
+    h2=tableName
+    
+    form#list-form
+      div#main
+        table#list
+          thead
+            tr
+              for hdr in Object.keys(tablelist[0])
+                th #{hdr}
+          tbody
+            if tablelist && tablelist.length > 0
+              each row in tablelist
+                tr
+                  each col in row
+                    td #{col}
