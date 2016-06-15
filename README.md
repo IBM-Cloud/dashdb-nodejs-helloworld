@@ -35,7 +35,7 @@ For issues that you encounter with this service, go to [**Get help**](https://de
   $ cf login
   ```
 
-7. Create the Weather Channel service in Bluemix.
+7. Create a dashDB service instance in Bluemix.
 
   ```
   $ cf create-service dashDB Entry dashDB-nodesample
