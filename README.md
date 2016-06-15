@@ -8,7 +8,7 @@ For issues that you encounter with this service, go to [**Get help**](https://de
 
 [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy)
 
-![Bluemix Deployments](https://deployment-tracker.mybluemix.net/stats/7af446a296a043cd11243ab39e170668/badge.svg)
+![Bluemix Deployments](https://deployment-tracker.mybluemix.net/stats/6dc62259729f4ccc57f616d7f1e7315b/badge.svg)
 
 ## Running the app on Bluemix
 
