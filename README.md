@@ -196,7 +196,7 @@ The primary source of debugging information for your Bluemix app is the logs. To
 For more detailed information on troubleshooting your application, see the [Troubleshooting section](https://www.ng.bluemix.net/docs/troubleshoot/tr.html) in the Bluemix documentation.
 
 ## Contribute
-We are more than happy to accept external contributions to this project, be it in the form of issues or pull requests. If you find a bug or want an enhancement to be added to the sample application, please report via the [issues section](https://github.com/IBM-Bluemix/dashdb-nodejs-helloworld/issues) or even better, fork the project and submit a pull request with your fix! Pull requests will be evaulated on an individual basis based on value add to the sample application.
+We are more than happy to accept external contributions to this project, be it in the form of issues or pull requests. If you find a bug or want an enhancement to be added to the sample application, please report via the [issues section](https://github.com/IBM-Bluemix/dashdb-nodejs-helloworld/issues) or even better, fork the project and submit a pull request with your fix. Pull requests will be evaulated on an individual basis based on value add to the sample application.
 
 
 ## Privacy Notice
