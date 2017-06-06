@@ -1,15 +1,15 @@
 {
   "engines": {
-    "node": "0.10.33"
+    "node": "^4"
   },
   "name": "dashdbnodesample",
   "version": "0.0.1",
   "description": "A sample node app for connecting to dashDB service on Bluemix",
   "dependencies": {
-    "cf-deployment-tracker-client": "0.0.8",
-    "express": "3.5.x",
-    "ibm_db": "0.0.19",
-    "jade": "1.11.0"
+    "cf-deployment-tracker-client": "^0.0.8",
+    "express": "^3.5.3",
+    "ibm_db": "^2.0.0",
+    "jade": "^1.11.0"
   },
   "scripts": {
     "start": "node app.js"
