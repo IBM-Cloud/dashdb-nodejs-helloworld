@@ -1,8 +1,8 @@
-# dashDB NodeJS HelloWorld Sample
+# Db2 Warehouse on Cloud -  Node.js Hello World Sample
 
-dashdb-nodejs-helloworld is a simple implementation of an app running on Node.js runtime demonstrating how to connect Node.js applications to dashDB service on Bluemix.
+The code in this repository provides a simple implementation of an app running on Node.js runtime demonstrating how to connect Node.js applications to the IBM Db2 Warehouse on Cloud service.
 
-You can bind a dashDB service instance to an app running on Node.js runtime in Bluemix and then work with the data in the dashDB database. The Bluemix Node.js runtime will automatically lay down native driver dependencies when you have a dashDB Service instance bound to your app. The sample illustrated here uses express and jade node modules.
+You can bind a IBM Db2 Warehouse on Cloud service instance to an app running on Node.js runtime in the IBM Cloud (Bluemix) and then work with the data in the Db2 database (relational SQL database). The Bluemix Node.js runtime will automatically lay down native driver dependencies when you have a Db2 Service instance bound to your app. The sample illustrated here uses express and jade node modules.
 
 For issues that you encounter with this service, go to [**Get help**](https://developer.ibm.com/bluemix/) in the Bluemix developer community.
 
@@ -35,7 +35,7 @@ For issues that you encounter with this service, go to [**Get help**](https://de
   $ cf login
   ```
 
-7. Create a dashDB service instance in Bluemix.
+7. Create a Db2 Warehouse on Cloud service instance in Bluemix.
 
   ```
   $ cf create-service dashDB Entry dashDB-nodesample
@@ -89,15 +89,15 @@ This command will start your application. When your app has started, your consol
 
 ## Decomposition Instructions
 
-The primary purpose of this demo is to provide a sample implementation of an app running on Node.js runtime demonstrating how to connect Node.js applications to dashDB service on Bluemix. The relevant code for this integration is located within the `app.js` file.
+The primary purpose of this demo is to provide a sample implementation of an app running on Node.js runtime demonstrating how to connect Node.js applications to Db2 Warehouse on Cloud service on Bluemix. The relevant code for this integration is located within the `app.js` file.
 
-The following components are required to connect dashDB service from a Node.js application. The are all described in further detail in this topic.
+The following components are required to connect Db2 from a Node.js application. The are all described in further detail in this topic.
 
 - package.json
 - Node.js program
 - A dashDB service instance
 
-####package.json
+#### package.json
 The package.json contains information about your app and its dependencies. It is used by npm tool to install, update, remove and manage the node modules you need. Add the ibm_db dependency to your package.json:
 ```
 {
@@ -125,7 +125,7 @@ The package.json contains information about your app and its dependencies. It is
 ```
 
 
-###Connecting to dashDB from Node.js code
+### Connecting to Db2 from Node.js code
 
 In your Node.js code, parse the VCAP_SERVICES environment variable to retrieve the database connection information and connect to the database as shown in the following example.
 
@@ -213,10 +213,10 @@ This data is collected from the VCAP_APPLICATION environment variable in IBM Blu
 
 Deployment tracking can be disabled by removing `require("cf-deployment-tracker-client").track();` from the beginning of the `app.js` file.
 
-###Related Links
+### Related Links
 - [IBM DB2 node.js API](https://www.npmjs.org/package/ibm_db#api)
 
-- [Using IBM DB2 from node.js](https://www.ibm.com/developerworks/community/blogs/pd/entry/using_ibm_db2_from_node_js4?lang=en)
+- [Using IBM Db2 from node.js](https://www.ibm.com/developerworks/community/blogs/pd/entry/using_ibm_db2_from_node_js4?lang=en)
 
-- [IBM DB2 v10.5 Knowledge Center](https://www-01.ibm.com/support/knowledgecenter/SSEPGG_10.5.0/com.ibm.db2.luw.kc.doc/welcome.html)
-- [IBM DB2 developerWorks](http://www.ibm.com/developerworks/data/products/db2/)
+- [IBM Db2 v10.5 Knowledge Center](https://www-01.ibm.com/support/knowledgecenter/SSEPGG_10.5.0/com.ibm.db2.luw.kc.doc/welcome.html)
+- [IBM Db2 developerWorks](http://www.ibm.com/developerworks/data/products/db2/)
