@@ -1,7 +1,7 @@
 ---
 declared-services:
   dashDB-nodesample:
-    label: dashDB
+    label: dashDB For Transactions
     plan: Lite
 applications:
 # replace the host variable below with your own unique one, as this one can be already taken
