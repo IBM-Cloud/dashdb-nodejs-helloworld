@@ -7,13 +7,13 @@ exports.listSysTables = function(ibmdb,connString) {
 			 res.send("error occurred " + err.message);
 			}
 			else {
-				conn.query("SELECT FIRST_NAME, LAST_NAME, EMAIL, WORK_PHONE from GOSALESHR.employee FETCH FIRST 10 ROWS ONLY", function(err, tables, moreResultSets) {
+				conn.query("select tabschema, owner, tabname, type, tableorg from SYSCAT.TABLES fetch first 10 rows", function(err, tables, moreResultSets) {
 							
 							
 				if ( !err ) { 
 					res.render('tablelist', {
 						"tablelist" : tables,
-						"tableName" : "10 rows from the GOSALESHR.EMPLOYEE table",
+						"tableName" : "10 rows from the SYSCAT.TABLES table",
 						"message": "Congratulations. Your connection to dashDB is successful."
 						
 					 });

@@ -1,12 +1,12 @@
 ---
 declared-services:
   dashDB-nodesample:
-    label: dashDB
-    plan: Entry
+    label: dashDB For Transactions
+    plan: Lite
 applications:
 # replace the host variable below with your own unique one, as this one can be already taken
 - name: dashdbnodesample
-  memory: 512M
+  memory: 256M
   instances: 1
   path: .
   host: dashdbnodesample
